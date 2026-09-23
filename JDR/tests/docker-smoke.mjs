@@ -6,7 +6,7 @@ const url = process.env.NYRANTHIA_PUBLIC_URL;
 assert.equal(url, 'http://127.0.0.1:4319');
 const authorization = `Basic ${Buffer.from(`${process.env.NYRANTHIA_AUTH_USER}:${process.env.NYRANTHIA_AUTH_PASSWORD}`).toString('base64')}`;
 const headers = { authorization, origin: url };
-const compose = (...args) => execFileSync('docker', ['compose', '-f', 'docker-compose.yaml', '-f', 'compose.local.yaml', ...args], { stdio: 'pipe', timeout: 120000 }).toString().trim();
+const compose = (...args) => execFileSync('docker', ['compose', '--project-directory', '..', '-f', 'docker-compose.yaml', '-f', 'compose.local.yaml', ...args], { stdio: 'pipe', timeout: 120000 }).toString().trim();
 assert.equal(compose('exec', '-T', 'jdr', 'node', '-p', 'process.getuid()'), '1000');
 assert.equal((await fetch(`${url}/api/health`)).status, 200);
 assert.equal((await fetch(url)).status, 401);

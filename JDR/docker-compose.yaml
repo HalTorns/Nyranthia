@@ -1,7 +1,8 @@
 services:
   jdr:
     build:
-      context: .
+      # Coolify fixe --project-directory à la racine du dépôt.
+      context: ./JDR
       dockerfile: Dockerfile
     restart: unless-stopped
     init: true

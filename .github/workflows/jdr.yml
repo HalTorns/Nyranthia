@@ -27,6 +27,8 @@ jobs:
       - run: npm ci --no-audit --no-fund
       - run: npm run build
       - run: npm test
+      - name: Vérifier les chemins depuis la racine comme Coolify
+        run: npm run test:compose
       - name: Préparer une configuration de test isolée
         run: |
           echo "NYRANTHIA_AUTH_PASSWORD=$(openssl rand -hex 24)" >> "$GITHUB_ENV"
@@ -35,12 +37,12 @@ jobs:
           echo "COMPOSE_PROJECT_NAME=nyranthia-test-${GITHUB_RUN_ID}" >> "$GITHUB_ENV"
           echo "NYRANTHIA_DOCKER_TEST=1" >> "$GITHUB_ENV"
       - name: Construire et démarrer le conteneur
-        run: docker compose -f docker-compose.yaml -f compose.local.yaml up --build --wait --wait-timeout 120
+        run: docker compose --project-directory .. -f docker-compose.yaml -f compose.local.yaml up --build --wait --wait-timeout 120
       - name: Vérifier authentification, écriture et persistance après recréation
         run: npm run test:docker
       - name: Journaux Docker en cas d’échec
         if: failure()
-        run: docker compose -f docker-compose.yaml -f compose.local.yaml logs --tail 100
+        run: docker compose --project-directory .. -f docker-compose.yaml -f compose.local.yaml logs --tail 100
       - name: Arrêter le conteneur de test
         if: always()
-        run: docker compose -f docker-compose.yaml -f compose.local.yaml down
+        run: docker compose --project-directory .. -f docker-compose.yaml -f compose.local.yaml down

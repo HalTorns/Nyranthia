@@ -10,8 +10,8 @@ Créer une **Application depuis un dépôt Git** dans le projet Coolify, avec le
 | --- | --- |
 | Branche | `main` |
 | Build Pack | `Docker Compose` |
-| Base Directory | `/JDR` |
-| Docker Compose Location | `/docker-compose.yaml` |
+| Base Directory | `/` |
+| Docker Compose Location | `/JDR/docker-compose.yaml` |
 | Service à exposer | `jdr` |
 | Port interne | `4317` |
 | Domains du service | `https://jdr.votre-domaine.fr:4317` |
@@ -31,6 +31,8 @@ Faire pointer le DNS du domaine vers le serveur Coolify, enregistrer les réglag
 Utiliser un domaine ou sous-domaine dédié. `JDR` est le dossier du dépôt, pas un préfixe d’URL : l’application s’ouvre à `https://jdr.votre-domaine.fr/`, pas sous `/JDR/`.
 
 Le fichier Compose définit le volume `livre`, monté sur `/app/data`, et le contrôle de santé. Il ne publie aucun port directement sur le serveur : Coolify assure le routage. La construction installe les dépendances et compile l’éditeur ; aucune commande de build supplémentaire n’est nécessaire dans Coolify.
+
+Le contexte de construction `./JDR` est relatif à la racine du dépôt. Le réglage **Base Directory `/`** fait lancer Compose avec `--project-directory` sur cette racine ; le fichier Compose reste bien dans `JDR`. Les commandes locales et les tests reprennent ce réglage. En cas d’ancienne erreur « Dockerfile not found », appliquer les deux chemins du tableau, charger la dernière version de `main` et recharger la définition Compose avant de redéployer.
 
 Référence des champs et du suffixe de port : [documentation officielle Coolify](https://coolify.io/docs/applications/builds/docker-compose).
 
@@ -108,10 +110,12 @@ NYRANTHIA_AUTH_PASSWORD=un-mot-de-passe-de-test-personnel
 ```
 
 ```bash
-docker compose -f docker-compose.yaml -f compose.local.yaml up --build -d --wait
+docker compose --env-file .env --project-directory .. -p jdr -f docker-compose.yaml -f compose.local.yaml up --build -d --wait
 ```
 
 Ouvrir `http://127.0.0.1:4319`. L’exception HTTP est réservée à localhost ; un domaine public doit utiliser HTTPS. `compose.local.yaml` ouvre uniquement un port de boucle locale pour cet essai ; **ne pas l’ajouter au déploiement Coolify**.
+
+Le nom de projet local `jdr` conserve le volume des essais réalisés avant cette correction de chemin. Utiliser les mêmes options (`--env-file .env --project-directory .. -p jdr -f docker-compose.yaml -f compose.local.yaml`) pour les commandes locales suivantes, par exemple `logs` ou `stop`.
 
 ## Développement et vérifications
 
@@ -126,6 +130,6 @@ npm start
 
 Sans configuration d’hébergement, le serveur de développement écoute uniquement `127.0.0.1:4317`. Le lancement Node direct ne charge pas `.env` automatiquement. Pour une configuration hébergée, renseigner les variables d’environnement ou utiliser Compose.
 
-Les tests utilisent des fichiers séparés dans `JDR/tmp/tests`. Le workflow GitHub `JDR - Tests et Docker` vérifie les tests Node, construit le conteneur Linux puis teste l’authentification, l’écriture du livre enrichi et la conservation des notes/images après recréation du conteneur. Il ne publie pas d’image et ne déclenche pas lui-même Coolify.
+Les tests utilisent des fichiers séparés dans `JDR/tmp/tests`. Le workflow GitHub `JDR - Tests et Docker` vérifie les tests Node et les chemins Compose (`npm run test:compose`, Docker CLI nécessaire), construit le conteneur Linux avec le répertoire de projet à la racine comme Coolify, puis teste l’authentification, l’écriture du livre enrichi et la conservation des notes/images après recréation du conteneur. Il ne publie pas d’image et ne déclenche pas lui-même Coolify.
 
 Toute l’application est dans `JDR`. Le seul fichier d’automatisation se trouve dans `.github/workflows/jdr.yml`, emplacement imposé par GitHub Actions ; il est filtré sur les changements du projet JDR.
