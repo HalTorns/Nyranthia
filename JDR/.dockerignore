@@ -1,0 +1,11 @@
+**
+!package.json
+!package-lock.json
+!server.mjs
+!store.mjs
+!rich-format.mjs
+!config.mjs
+!seed.json
+!public/
+!public/**
+public/editor.bundle.js

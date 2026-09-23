@@ -1,0 +1,21 @@
+{
+  "name": "nyranthia-atelier",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "esbuild public/app.js --bundle --format=esm --minify --outfile=public/editor.bundle.js",
+    "start": "node server.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "test:docker": "node tests/docker-smoke.mjs"
+  },
+  "dependencies": {
+    "@tiptap/core": "^3.31.3",
+    "@tiptap/extension-highlight": "^3.31.3",
+    "@tiptap/extension-image": "^3.31.3",
+    "@tiptap/extensions": "^3.31.3",
+    "@tiptap/starter-kit": "^3.31.3"
+  },
+  "devDependencies": {
+    "esbuild": "^0.28.2"
+  }
+}

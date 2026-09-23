@@ -1,0 +1,5 @@
+# Option pour tester sur ce PC ; ne pas ajouter dans Coolify.
+services:
+  jdr:
+    ports:
+      - '127.0.0.1:4319:4317'

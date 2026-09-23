@@ -1,0 +1,639 @@
+{
+  "title": "Nyranthia",
+  "subtitle": "Livre de base",
+  "chapters": [
+    {
+      "id": "decouvrir",
+      "title": "Découvrir Nyranthia",
+      "audience": "Tous",
+      "sections": [
+        {
+          "id": "decouvrir-monde",
+          "title": "Un monde vivant et inconnu",
+          "text": "Nyranthia est un jeu de rôle de découverte où la peur accompagne l’émerveillement. Une nature puissante domine les paysages. Des forêts, des marais et des collines familières côtoient des milieux étranges, des créatures redoutables et des vestiges dont la fonction s’est perdue. Les habitants connaissent d’abord les lieux, les usages et les dangers de leur propre communauté.",
+          "prompt": ""
+        },
+        {
+          "id": "decouvrir-experience",
+          "title": "La promesse du jeu",
+          "text": "Explorer expose à l’inconnu. Un passage silencieux peut abriter une menace ; une forêt inquiétante peut fournir un abri ou de quoi se nourrir. Les personnages sont vulnérables, mais capables d’apprendre et de nouer des relations. Peur et émerveillement doivent conserver chacune leur place.",
+          "prompt": ""
+        },
+        {
+          "id": "decouvrir-liberte",
+          "title": "Des choix qui appartiennent au groupe",
+          "text": "Les personnages choisissent leurs destinations, leurs alliances et leurs objectifs. Une communauté à protéger, une relation à réparer ou un territoire à comprendre peuvent donner une direction au jeu. Le livre n’impose ni âge commun, ni origine unique, ni itinéraire obligatoire.",
+          "prompt": "Préciser les formes de parties proposées et la manière dont le groupe choisit son objectif initial."
+        },
+        {
+          "id": "decouvrir-lecture",
+          "title": "Lire ce livre",
+          "text": "Les chapitres destinés à tous présentent le monde vécu et les règles communes. Les chapitres réservés au maître de jeu donnent accès à des vérités que les personnages ne connaissent pas nécessairement. Chaque groupe détermine ce que son origine, ses expériences et ses savoirs lui permettent de comprendre.",
+          "prompt": ""
+        }
+      ]
+    },
+    {
+      "id": "societes",
+      "title": "Communautés et vie quotidienne",
+      "audience": "Tous",
+      "sections": [
+        {
+          "id": "societes-dispersion",
+          "title": "Une humanité dispersée",
+          "text": "La plupart des communautés comptent quelques dizaines à quelques centaines de personnes. De très rares rassemblements peuvent atteindre plusieurs milliers d’habitants. Les longs voyages et échanges entre établissements restent exceptionnels ; l’isolement produit des traditions, des savoirs et des interprétations différents.",
+          "prompt": ""
+        },
+        {
+          "id": "societes-transmission",
+          "title": "La mémoire et les savoirs",
+          "text": "Les savoirs se transmettent principalement à l’oral : gestes appris, récits, chants et habitudes locales entretiennent la mémoire. Certaines communautés préservent la lecture, l’écriture et des archives. Ces pratiques ne sont pas universelles et le savoir conservé dans un lieu peut être inconnu ailleurs.",
+          "prompt": ""
+        },
+        {
+          "id": "societes-croyances",
+          "title": "Croire et interpréter",
+          "text": "Les Entrelacs et les phénomènes du vivant sont généralement mal compris ou vénérés. Il n’existe pas de religion uniforme. Une communauté peut sacraliser la nature tout en craignant les manifestations de la Résonance ou en subissant leur interdiction politique.",
+          "prompt": ""
+        },
+        {
+          "id": "societes-materiel",
+          "title": "Habiter et subsister",
+          "text": "L’artisanat, les ressources locales et la récupération soutiennent l’essentiel de la vie matérielle. Agriculture, élevage, pêche, chasse et cueillette prennent des places différentes selon les milieux. Les communautés peuvent trouver de quoi vivre, mais les trajets nécessaires à l’obtention des ressources les exposent aux dangers du territoire.",
+          "prompt": "Décrire plusieurs formes de communautés et leurs besoins sans imposer un village de départ."
+        },
+        {
+          "id": "societes-identites",
+          "title": "Langues, noms et calendriers",
+          "text": "Les communautés emploient leurs propres noms de lieux et leurs propres repères calendaires. Il n’existe pas de carte ni de calendrier partagé par toute l’humanité. Certains noms conservent la trace déformée d’appellations dont le sens a disparu.",
+          "prompt": "Définir des principes simples pour inventer des noms, des usages et des différences linguistiques."
+        },
+        {
+          "id": "societes-relations",
+          "title": "Pouvoirs et relations entre communautés",
+          "text": "",
+          "prompt": "Décrire quelques formes de pouvoir, de solidarité et de dépendance, ainsi que la place variable des Résonnants."
+        }
+      ]
+    },
+    {
+      "id": "personnages",
+      "title": "Créer un personnage",
+      "audience": "Tous",
+      "sections": [
+        {
+          "id": "personnages-concept",
+          "title": "Choisir une place dans le monde",
+          "text": "",
+          "prompt": "Définir les questions de création : origine, activité, désir, attache et raison de rejoindre le groupe."
+        },
+        {
+          "id": "personnages-origine",
+          "title": "Origines et savoirs",
+          "text": "",
+          "prompt": "Définir ce qu’une origine apporte, en séparant connaissances locales, compétences et croyances."
+        },
+        {
+          "id": "personnages-profil",
+          "title": "Caractéristiques et aptitudes",
+          "text": "",
+          "prompt": "Choisir les caractéristiques et compétences, puis fixer leur répartition initiale."
+        },
+        {
+          "id": "personnages-liens",
+          "title": "Construire le groupe",
+          "text": "",
+          "prompt": "Décrire une création collective des liens et de l’objectif commun, sans imposer un groupe d’enfance."
+        },
+        {
+          "id": "personnages-resonance",
+          "title": "Créer un Résonnant",
+          "text": "Un personnage peut commencer avec un apprentissage de la Résonance ou découvrir ses dispositions au cours du jeu. Ces possibilités dépendent des choix du groupe.",
+          "prompt": "Fixer les conditions de création d’un Résonnant et les aptitudes accessibles au départ."
+        },
+        {
+          "id": "personnages-fiche",
+          "title": "Équipement initial et fiche",
+          "text": "",
+          "prompt": "Fixer les ressources initiales et préparer une fiche accompagnée d’un personnage d’exemple."
+        }
+      ]
+    },
+    {
+      "id": "resolution",
+      "title": "Résoudre les actions",
+      "audience": "Tous",
+      "sections": [
+        {
+          "id": "resolution-boucle",
+          "title": "De l’intention à la conséquence",
+          "text": "",
+          "prompt": "Décrire quand une action réussit directement, quand elle demande une résolution et qui décide."
+        },
+        {
+          "id": "resolution-methode",
+          "title": "La procédure de résolution",
+          "text": "",
+          "prompt": "Choisir dés ou autre méthode, calcul du résultat et niveaux de réussite."
+        },
+        {
+          "id": "resolution-difficulte",
+          "title": "Difficulté et circonstances",
+          "text": "",
+          "prompt": "Fixer comment le risque, le matériel, la préparation et l’environnement influencent une action."
+        },
+        {
+          "id": "resolution-entraide",
+          "title": "Agir ensemble et s’opposer",
+          "text": "",
+          "prompt": "Définir l’entraide, les actions de groupe et les confrontations entre personnages."
+        },
+        {
+          "id": "resolution-consequences",
+          "title": "Échec, réussite et coût",
+          "text": "",
+          "prompt": "Définir les conséquences d’une action risquée et leur annonce avant la résolution."
+        },
+        {
+          "id": "resolution-exemples",
+          "title": "Exemples commentés",
+          "text": "",
+          "prompt": "Écrire quelques exemples complets de résolution après validation de la mécanique."
+        }
+      ]
+    },
+    {
+      "id": "exploration",
+      "title": "Voyager, explorer et survivre",
+      "audience": "Tous",
+      "sections": [
+        {
+          "id": "exploration-ressources",
+          "title": "Une nature qui nourrit",
+          "text": "Une personne qui connaît son environnement peut y trouver de quoi vivre. Pêche, chasse et cueillette sont possibles, mais l’abondance apparente ne garantit pas la comestibilité. Les Altérés et les autres menaces rendent surtout dangereux les déplacements et l’accès aux ressources.",
+          "prompt": ""
+        },
+        {
+          "id": "exploration-mobilite",
+          "title": "Se déplacer",
+          "text": "La marche, les bateaux, les charrettes et les véhicules improvisés permettent de se déplacer. De grands sangliers apprivoisés servent parfois de montures. Les longues liaisons entre communautés sont exceptionnelles ; au-delà des lieux connus, les passages et les ressources restent incertains.",
+          "prompt": "Fixer l’échelle du voyage, le temps de trajet et les contraintes de transport."
+        },
+        {
+          "id": "exploration-discretion",
+          "title": "Observer et rester discret",
+          "text": "",
+          "prompt": "Définir comment repérer une menace, éviter d’attirer l’attention et suivre les traces laissées dans un lieu."
+        },
+        {
+          "id": "exploration-terrain",
+          "title": "Traverser les milieux",
+          "text": "",
+          "prompt": "Définir les effets jouables du relief, de la météo, de l’obscurité, des eaux et des passages instables."
+        },
+        {
+          "id": "exploration-reserves",
+          "title": "Gérer les ressources",
+          "text": "",
+          "prompt": "Choisir le degré de suivi de la nourriture, de l’eau, du repos et du matériel sans alourdir chaque trajet."
+        },
+        {
+          "id": "exploration-haltes",
+          "title": "Se reposer et se rétablir",
+          "text": "",
+          "prompt": "Définir ce qui rend une halte sûre, ce qu’elle permet de récupérer et ce qui peut l’interrompre."
+        }
+      ]
+    },
+    {
+      "id": "conflits",
+      "title": "Affrontements, blessures et conséquences",
+      "audience": "Tous",
+      "sections": [
+        {
+          "id": "conflits-intention",
+          "title": "Rester vulnérable",
+          "text": "Les situations dangereuses doivent faire sentir la possibilité de mourir. La mort des personnages reste exceptionnelle ; les blessures, les pertes et les conséquences durables donnent pourtant du poids aux choix. Survivre à une rencontre ne signifie pas en sortir indemne.",
+          "prompt": "Traduire cette intention en protections et en conséquences explicites, sans dépendre d’un sauvetage arbitraire du MJ."
+        },
+        {
+          "id": "conflits-deroulement",
+          "title": "Le déroulement d’un affrontement",
+          "text": "",
+          "prompt": "Définir l’ordre d’action, les distances, les déplacements, les attaques et les défenses."
+        },
+        {
+          "id": "conflits-dommages",
+          "title": "Dommages et blessures",
+          "text": "",
+          "prompt": "Définir la résistance, la protection et les effets des blessures à court et long terme."
+        },
+        {
+          "id": "conflits-sorties",
+          "title": "Fuite, reddition et mise hors de combat",
+          "text": "",
+          "prompt": "Définir des issues crédibles au combat autres que la mort, et les conditions permettant de rompre l’affrontement."
+        },
+        {
+          "id": "conflits-soins",
+          "title": "Soins, séquelles et mort",
+          "text": "",
+          "prompt": "Fixer les soins ordinaires, la récupération, les séquelles et les circonstances précises d’une mort de personnage."
+        }
+      ]
+    },
+    {
+      "id": "equipement",
+      "title": "Objets, techniques et artisanat",
+      "audience": "Tous",
+      "sections": [
+        {
+          "id": "equipement-artisanat",
+          "title": "Les moyens du quotidien",
+          "text": "Les outils et les objets courants reposent principalement sur le travail artisanal et sur les matériaux disponibles localement. Leur qualité et leur abondance varient avec les savoirs et les ressources de chaque communauté.",
+          "prompt": "Préparer un inventaire court d’outils, de protections et d’armes adaptées au monde."
+        },
+        {
+          "id": "equipement-montures",
+          "title": "Les grands sangliers",
+          "text": "De grands sangliers, reconnaissables mais beaucoup plus massifs, peuvent servir de montures. Ils sont difficiles à apprivoiser ; les animaux domestiqués sont relativement rares et précieux. Leur taille impose des besoins alimentaires et des contraintes de conduite.",
+          "prompt": "Définir les règles d’usage, d’entretien et de réaction des montures."
+        },
+        {
+          "id": "equipement-recuperation",
+          "title": "Réparer et transformer",
+          "text": "",
+          "prompt": "Définir ce que l’artisanat permet de réparer ou de fabriquer, et les ressources et durées nécessaires."
+        },
+        {
+          "id": "equipement-echanges",
+          "title": "Valeur et échanges",
+          "text": "",
+          "prompt": "Choisir comment gérer le troc, les dettes, les services et la valeur du matériel sans imposer une monnaie universelle."
+        },
+        {
+          "id": "equipement-inventaire",
+          "title": "Porter et conserver",
+          "text": "",
+          "prompt": "Définir une gestion simple de l’encombrement, de l’usure, des réserves et des biens partagés."
+        }
+      ]
+    },
+    {
+      "id": "resonance",
+      "title": "Les Résonnants et la Résonance",
+      "audience": "Tous",
+      "sections": [
+        {
+          "id": "resonance-relation",
+          "title": "Entrer en relation avec le vivant",
+          "text": "Les Résonnants peuvent entrer en relation avec les Entrelacs. Leurs pratiques prennent la forme de rites dont les communautés proposent des interprétations différentes. Une réponse du réseau ne constitue jamais la garantie d’être compris, accepté ou protégé.",
+          "prompt": ""
+        },
+        {
+          "id": "resonance-rites",
+          "title": "Chants, danses et poudre",
+          "text": "Chants, danses et musique permettent d’entrer progressivement en Résonance. La poudre préparée à partir des fleurs de Nyranthia accélère cette connexion. Chaque consommation endommage la santé du Résonnant. Les rites pratiqués sans poudre ont eux aussi un coût physique.",
+          "prompt": "Fixer les durées des rites, l’accélération liée à la poudre et les effets précis sur la santé."
+        },
+        {
+          "id": "resonance-lieu",
+          "title": "La puissance dépend du lieu",
+          "text": "Les capacités sont liées à la proximité et à la compatibilité d’un Entrelacs. Elles deviennent plus fortes près d’un Cœur et faibles, voire absentes, loin d’un réseau adapté. Chaque nouvel Entrelacs demande un apprentissage. Le réseau peut refuser ou perturber une demande.",
+          "prompt": "Définir les étapes d’adaptation à un réseau et les effets jouables d’une connexion faible ou refusée."
+        },
+        {
+          "id": "resonance-perception",
+          "title": "Percevoir et influencer",
+          "text": "La Résonance permet de ressentir des indices de vibrations, de stress ou de mouvements. Elle ne donne pas une vision parfaite du territoire. Elle peut influencer certains animaux associés au réseau, sans constituer un contrôle absolu, et susciter des réactions défensives dont l’efficacité varie selon le vivant concerné.",
+          "prompt": "Fixer portée, précision et limites des effets de perception, d’appel et de défense."
+        },
+        {
+          "id": "resonance-croissance",
+          "title": "Agir sur la croissance",
+          "text": "La croissance agit sur des tissus végétaux existants. Elle demande de la matière et des réserves ; elle ne fait pas surgir instantanément un arbre adulte.",
+          "prompt": "Définir les effets de croissance accessibles, leur durée et les ressources nécessaires."
+        },
+        {
+          "id": "resonance-soins",
+          "title": "Soigner",
+          "text": "La Résonance peut stimuler la réparation du vivant. Elle ne rend pas tous les dommages réversibles et ses interventions peuvent provoquer des dérives. Ses possibilités restent liées au réseau et aux aptitudes du Résonnant.",
+          "prompt": "Fixer les blessures soignables, les limites du soin et les informations de traitement accessibles aux personnages."
+        },
+        {
+          "id": "resonance-echos",
+          "title": "Échos et communion",
+          "text": "Les échos transmettent des traces sensorielles imprécises du passé, jamais un récit complet ni un enregistrement fidèle. Une communion plus profonde peut ouvrir une perception plus vaste du territoire, au risque de confusion, de perte de connaissance ou de séquelles.",
+          "prompt": "Définir la fiabilité des échos et les risques d’une communion prolongée."
+        },
+        {
+          "id": "resonance-procedure",
+          "title": "Résoudre une pratique",
+          "text": "",
+          "prompt": "Écrire une procédure commune aux pouvoirs : demande, conditions, résolution, réponse et coût."
+        }
+      ]
+    },
+    {
+      "id": "progression",
+      "title": "Évoluer et prolonger le jeu",
+      "audience": "Tous",
+      "sections": [
+        {
+          "id": "progression-apprentissage",
+          "title": "Apprendre de l’expérience",
+          "text": "",
+          "prompt": "Choisir ce qui déclenche la progression et comment améliorer les aptitudes."
+        },
+        {
+          "id": "progression-specialisation",
+          "title": "Développer ses pratiques",
+          "text": "",
+          "prompt": "Définir l’apprentissage des techniques et de la Résonance, sans ajouter de pouvoirs hors du cadre de l’univers."
+        },
+        {
+          "id": "progression-liens",
+          "title": "Faire évoluer le groupe",
+          "text": "",
+          "prompt": "Définir comment changent les liens, les objectifs et les attaches des personnages au fil du jeu."
+        },
+        {
+          "id": "progression-duree",
+          "title": "Entre deux expéditions",
+          "text": "",
+          "prompt": "Définir les activités entre séances, les projets longs et l’accueil de nouveaux personnages."
+        }
+      ]
+    },
+    {
+      "id": "territoires",
+      "title": "Construire les territoires",
+      "audience": "MJ",
+      "sections": [
+        {
+          "id": "territoires-vestiges",
+          "title": "La nature au premier plan",
+          "text": "Les vestiges industriels sont généralement discrets, enfouis sous les sols, les racines, les eaux ou les débris. Une forêt peut cacher une ancienne banlieue ; une émergence de béton peut révéler une structure immense. Quelques découvertes monumentales interrompent ce paysage, mais les bâtiments sont rarement reconnaissables dans leur forme et leur fonction d’origine.",
+          "prompt": ""
+        },
+        {
+          "id": "territoires-erosion",
+          "title": "Deux siècles sans entretien",
+          "text": "L’eau, la corrosion, le gel, les incendies et la végétation ont dégradé les constructions. Les maisons légères ont souvent disparu ; des fondations, murs massifs, ouvrages en pierre et structures de béton subsistent. Les voies anciennes restent parfois lisibles comme des alignements, sans constituer des routes praticables. Tunnels, métros et parkings peuvent être noyés ou partiellement effondrés.",
+          "prompt": ""
+        },
+        {
+          "id": "territoires-eaux",
+          "title": "Eaux et littoraux",
+          "text": "L’abandon des digues, des pompes et des protections, ainsi que l’élévation marine, ont remodelé les côtes basses. Les fleuves reprennent leurs plaines d’inondation. Certains barrages persistent, d’autres cèdent ou s’ensablent. Les lacs et marais qui en résultent deviennent de nouveaux milieux. Aucune cote marine uniforme n’est fixée.",
+          "prompt": ""
+        },
+        {
+          "id": "territoires-biomes",
+          "title": "Des paysages familiers et étranges",
+          "text": "Les paysages sont globalement plausibles, mais certaines régions abritent des biomes profondément étranges. Les changements dépendent des conditions locales et de l’histoire du vivant. Les ruptures de relief, d’humidité, de nourriture ou de réseau peuvent produire des territoires très différents sans recourir à une autre origine surnaturelle.",
+          "prompt": "Créer une méthode courte pour définir le milieu, les ressources, les signes de danger et l’Entrelacs d’une région."
+        },
+        {
+          "id": "territoires-sites",
+          "title": "Décrire un lieu utilisable en jeu",
+          "text": "",
+          "prompt": "Préparer un modèle de lieu : apparence, accès, usages, ressources, menace, changements possibles et informations à découvrir."
+        }
+      ]
+    },
+    {
+      "id": "verite",
+      "title": "L’histoire enfouie de Nyranthia",
+      "audience": "MJ",
+      "sections": [
+        {
+          "id": "verite-decouverte",
+          "title": "Vers 2020 : la découverte",
+          "text": "Une plante inconnue est découverte en stase dans une couche glaciaire. Le monde humain est comparable au nôtre ; son histoire diverge à partir de cette découverte. La provenance de la plante, la raison de sa stase et son caractère terrestre ou non restent indéterminés, y compris pour le MJ.",
+          "prompt": ""
+        },
+        {
+          "id": "verite-industrie",
+          "title": "Recherches et exploitation",
+          "text": "Les chercheurs découvrent qu’ils peuvent orienter les lignées de Nyranthia en imposant des pressions successives : froid, chaleur, toxicité, ressources limitées ou agents pathogènes. Sa production d’huile et sa plasticité en font une ressource énergétique, industrielle et pharmaceutique. Elle est cultivée à grande échelle dans le monde entier avant la catastrophe.",
+          "prompt": ""
+        },
+        {
+          "id": "verite-medecine",
+          "title": "Les applications médicales",
+          "text": "Des équipes adaptent le Complexe à des cellules animales afin d’améliorer réparation tissulaire, résistance et longévité. Les premiers bénéficiaires sont des personnes aisées, non l’ensemble de la population. Des recherches initialement encadrées échouent à anticiper certains effets ; les promesses économiques accélèrent la commercialisation malgré des alertes, puis certains responsables dissimulent les risques.",
+          "prompt": ""
+        },
+        {
+          "id": "verite-chute",
+          "title": "Vers 2043 : la Chute",
+          "text": "Les premières transformations humaines débouchent sur une propagation de l’infection. Les violences et la désorganisation paralysent les grands réseaux en quelques semaines. L’eau, l’électricité, les transports et les communications cessent de fonctionner de manière fiable. Les États perdent progressivement le contrôle sur un à cinq ans. La Chute est une cascade de défaillances, pas une destruction instantanée de la planète.",
+          "prompt": ""
+        },
+        {
+          "id": "verite-present",
+          "title": "2243 : le monde actuel",
+          "text": "Pendant les deux siècles qui suivent la Chute, les lignées échappées, les cultures abandonnées et les infrastructures dégradées transforment les territoires. De vastes Entrelacs se constituent. Les sociétés se fragmentent et les savoirs deviennent locaux. L’année 2243 sert de référence au maître de jeu ; les habitants emploient leurs propres calendriers.",
+          "prompt": ""
+        },
+        {
+          "id": "verite-complexe",
+          "title": "Le Complexe Adaptatif",
+          "text": "Nyranthia héberge un complexe microscopique symbiotique, appelé Complexe Adaptatif dans le vocabulaire du MJ. Il modifie la régulation génétique, la réponse au stress et les variations transmissibles. Il ne prévoit pas la meilleure solution : l’environnement favorise certaines variantes. Toute adaptation importante conserve un coût ou une dépendance.\n\nL’influence du Complexe dépasse les descendants de la plante originelle. De nombreuses espèces végétales et animales ont été altérées, souvent légèrement. Toutes les formes nouvelles ne sont donc pas des variantes directes de Nyranthia. Les transformations d’un individu et l’évolution de sa descendance sont deux processus distincts, qui peuvent se combiner.\n\nLe fantastique apparent du monde repose sur cette origine biologique commune. Il s’agit d’une biologie fictionnelle cohérente, sans prétention à prédire l’évolution réelle.",
+          "prompt": ""
+        },
+        {
+          "id": "verite-fleur",
+          "title": "Fleur, huile et exposition",
+          "text": "La fleur concentre l’huile et les plus fortes quantités de substances actives. C’est la partie la plus dangereuse de la plante. Les usages industriels anciens restent techniquement possibles, mais les moyens de transformation ne sont généralement plus disponibles. Posséder des fleurs ou de l’huile ne donne pas accès, à lui seul, aux médicaments ou carburants d’avant la Chute.\n\nLa plante naturelle est toxique à la consommation. Une très faible dose peut être tolérée ; une forte exposition peut empoisonner, tuer ou déclencher l’état altéré. Certains animaux consomment des feuilles, des racines et la végétation adjacente, mais pas directement la fleur. La tolérance dépend des organismes et des lignées : toutes les parties ne sont pas universellement comestibles.\n\nDes émissions de spores et une eau contaminée peuvent provoquer l’infection. L’intensité du risque dépend des régions et du comportement des Entrelacs, notamment de leurs réactions défensives. Il n’existe pas une exposition uniforme qui rendrait toute eau ou tout air dangereux. La cartographie des risques doit rester locale.",
+          "prompt": ""
+        },
+        {
+          "id": "verite-resonnants",
+          "title": "La prédisposition des Résonnants",
+          "text": "Les Résonnants possèdent une prédisposition génétique qui améliore leur tolérance à Nyranthia et permet leur relation avec les Entrelacs. Cette particularité ne les immunise ni contre l’infection ni contre les dommages de leurs pratiques. Leur organisme constitue une interface biologique ; les habitants ne disposent pas nécessairement de cette explication.",
+          "prompt": ""
+        }
+      ]
+    },
+    {
+      "id": "alteres",
+      "title": "Les Altérés et les Enracinés",
+      "audience": "MJ",
+      "sections": [
+        {
+          "id": "alteres-infection",
+          "title": "Contamination et incubation",
+          "text": "Les Altérés sont des organismes humains profondément modifiés, non des morts ressuscités. L’infection se transmet par des fluides contaminés au contact des muqueuses ou de plaies ouvertes, notamment lors de morsures. Une exposition environnementale suffisante peut produire le même état. Le basculement survient entre trois et huit jours selon la personne.",
+          "prompt": ""
+        },
+        {
+          "id": "alteres-seuil",
+          "title": "Le seuil irréversible",
+          "text": "De très rares soins de Résonnants peuvent sauver une personne avant l’atteinte irréversible du cerveau. Une fois ce seuil franchi, la personne ne peut plus être récupérée. Les Altérés ne manifestent plus de comportements humains ; leur agressivité est incontrôlée. Leurs transformations physiques se poursuivent sur une durée beaucoup plus longue que l’incubation.",
+          "prompt": ""
+        },
+        {
+          "id": "alteres-dormance",
+          "title": "Dormance et alimentation",
+          "text": "Ils peuvent rester plusieurs années sans se nourrir en dormance. La plante peut les alimenter grâce à son huile. Leur fonctionnement constitue une particularité de la biologie fictionnelle du monde : il ne faut pas les décrire comme des humains ordinaires capables de rester indéfiniment actifs sans ressources.",
+          "prompt": ""
+        },
+        {
+          "id": "alteres-reveil",
+          "title": "Réveil et activité",
+          "text": "Les zones proches des humains sont très actives. Dans les lieux reculés sans passage humain depuis des années, les Altérés sont généralement dormants. Un territoire apparemment silencieux peut se réveiller lors d’une intrusion. La plante peut également provoquer leur éveil et les guider vers un lieu ; cette coordination n’implique pas le retour d’une intelligence humaine.",
+          "prompt": ""
+        },
+        {
+          "id": "alteres-enracines",
+          "title": "Les très anciens Altérés",
+          "text": "Il n’existe aucune reproduction entre Altérés : leur population est renouvelée par les contaminations. Certains individus remontent néanmoins à la Chute. Ces très anciens Altérés, appelés Enracinés, sont profondément transformés par la plante et leur environnement. Le nom ne signifie pas que tous sont immobiles ou littéralement fixés au sol.",
+          "prompt": ""
+        },
+        {
+          "id": "alteres-neutraliser",
+          "title": "Neutraliser un Altéré",
+          "text": "Détruire la zone cérébrale qui commande leur motricité les neutralise immédiatement. Sinon, il faut endommager suffisamment leur organisme. Les transformations peuvent rendre cette zone difficile à atteindre. Cette convention de jeu ne signifie ni invulnérabilité du reste du corps, ni nécessité d’un unique type d’arme.",
+          "prompt": "Traduire la neutralisation cérébrale en règles sans garantir un coup fatal facile à chaque attaque."
+        },
+        {
+          "id": "alteres-procedure",
+          "title": "Jouer la contamination",
+          "text": "",
+          "prompt": "Définir exposition, symptômes, progression et accès aux soins ; concilier l’irréversibilité du seuil avec la rareté voulue des morts."
+        }
+      ]
+    },
+    {
+      "id": "entrelacs",
+      "title": "Les Entrelacs et les Cœurs",
+      "audience": "MJ",
+      "sections": [
+        {
+          "id": "entrelacs-reseaux",
+          "title": "Des réseaux territoriaux",
+          "text": "Un Entrelacs est un vaste réseau vivant réunissant racines, rhizomes, microorganismes, réseaux fongiques et tissus spécialisés. Ses manifestations de surface peuvent sembler appartenir à des espèces différentes. Les réseaux suivent notamment l’eau, les sols et les anciennes cavités ; ils peuvent couvrir une région entière, sans respecter les frontières anciennes.",
+          "prompt": ""
+        },
+        {
+          "id": "entrelacs-coeurs",
+          "title": "Les Cœurs",
+          "text": "Les Cœurs sont les nœuds les plus anciens et les plus denses d’un Entrelacs. Ce sont des lieux physiques que l’on peut atteindre, parfois immenses, où se concentrent tissus, ressources et connexions. Un réseau peut posséder plusieurs Cœurs. Leur description précise dépend de la région et ne se réduit pas nécessairement à un organe unique.",
+          "prompt": ""
+        },
+        {
+          "id": "entrelacs-perception",
+          "title": "Perception, réponse et mystère",
+          "text": "Les signaux électriques, chimiques, hydrauliques et mécaniques permettent des réponses coordonnées aux blessures, vibrations et changements du milieu. Les Entrelacs peuvent éveiller et guider certains Altérés. Leurs comportements ressemblent parfois à une volonté, mais leur conscience reste indécidable, même pour le MJ.",
+          "prompt": ""
+        },
+        {
+          "id": "entrelacs-relations",
+          "title": "Coopérer et se combattre",
+          "text": "Un Entrelacs peut tolérer les humains, défendre certains lieux ou réagir violemment aux intrusions. Les réseaux peuvent collaborer ou se combattre biologiquement. Les habitants interprètent ces phénomènes comme des alliances, des colères ou des guerres, sans disposer d’une explication certaine.",
+          "prompt": ""
+        },
+        {
+          "id": "entrelacs-communautes",
+          "title": "Des équilibres avec les humains",
+          "text": "Une communauté peut entretenir une relation durable avec un Entrelacs, notamment grâce aux Résonnants. Le respect de lieux, de pratiques ou de limites peut coïncider avec une tolérance ou une protection. Le document ne tranche pas entre pacte conscient et équilibre biologique acquis.",
+          "prompt": ""
+        },
+        {
+          "id": "entrelacs-destruction",
+          "title": "Détruire un Cœur",
+          "text": "Les Altérés liés au territoire perdent en force et en organisation. Certains lieux peuvent être complètement défigurés au cours des mois suivants. Cela ne garantit ni la mort de tous les Altérés ni la disparition du réseau. La survie des autres Cœurs, la reconstitution et les formes exactes du bouleversement restent propres au territoire concerné.",
+          "prompt": ""
+        },
+        {
+          "id": "entrelacs-preparation",
+          "title": "Préparer un Entrelacs pour le jeu",
+          "text": "",
+          "prompt": "Créer une fiche de réseau : territoire, Cœurs, réactions, indices, relations et conditions de Résonance, sans lui imposer une conscience."
+        }
+      ]
+    },
+    {
+      "id": "bestiary",
+      "title": "Faune, menaces et phénomènes",
+      "audience": "MJ",
+      "sections": [
+        {
+          "id": "bestiary-evolution",
+          "title": "Une biosphère transformée",
+          "text": "Les paysages sont globalement plausibles, mais certaines régions abritent des biomes très étranges. Des espèces restent reconnaissables pour le MJ ; d’autres sont devenues méconnaissables. Pour les habitants, cette faune est la seule connue : ils ne comparent pas leurs animaux à ceux du XXIe siècle.\n\nLes organismes aux générations courtes peuvent diverger fortement en deux siècles. Les espèces à reproduction lente conservent plus souvent leur ascendance visible, sauf remodelage individuel important. Les lignées reflètent les conditions locales : humidité, altitude, nourriture, chaleur et relations avec les Entrelacs.\n\nLes chevaux ont globalement disparu ; les grands sangliers constituent une possibilité de monture dans certaines communautés.",
+          "prompt": ""
+        },
+        {
+          "id": "bestiary-capacites",
+          "title": "Capacités et contreparties",
+          "text": "Certaines espèces possèdent des capacités extraordinaires à explication biologique : camouflage, projections chimiques, perception des vibrations ou résistances spécialisées. Ces possibilités ne constituent pas des pouvoirs sans limites. Une armure réduit la mobilité ; un grand corps exige plus de nourriture ; une régénération consomme des réserves ; une spécialisation peut rendre dépendant d’un biome.",
+          "prompt": ""
+        },
+        {
+          "id": "bestiary-predateurs",
+          "title": "Prédateurs et ressources",
+          "text": "Les prédateurs sont généralement discrets, mais très dangereux. La nature peut nourrir une personne compétente : pêche, chasse et cueillette ne sont pas condamnées à l’échec. La présence des Altérés rend surtout les déplacements et l’accès aux ressources périlleux. Abondance végétale et comestibilité ne sont pas équivalentes.",
+          "prompt": ""
+        },
+        {
+          "id": "bestiary-heritage",
+          "title": "Les dangers hérités",
+          "text": "Des sols toxiques, des installations chimiques, des poches de contamination radioactive, des structures instables et des cavités inondées persistent localement. La végétation ne rend pas ces lieux sûrs. Les communautés peuvent les interpréter comme des sites maudits, sans connaître leur origine.",
+          "prompt": "Définir des signes observables et des effets jouables pour ces dangers, sans exiger une explication scientifique aux joueurs."
+        },
+        {
+          "id": "bestiary-fiches",
+          "title": "Un bestiaire prêt à jouer",
+          "text": "",
+          "prompt": "Créer quelques fiches : prédateur discret, animal ressource, monture, Altéré récent, Enraciné et danger végétal ; donner signes, comportement, limites et caractéristiques."
+        }
+      ]
+    },
+    {
+      "id": "mener",
+      "title": "Mener des parties de Nyranthia",
+      "audience": "MJ",
+      "sections": [
+        {
+          "id": "mener-connaissances",
+          "title": "Séparer les savoirs",
+          "text": "Les connaissances du maître de jeu, celles des joueurs et celles des personnages ne sont pas identiques. Une société peut conserver des écrits ou des techniques qu’une autre ignore. Présenter d’abord les lieux par leurs signes perceptibles permet de respecter le regard des personnages : une masse sous les racines, une cavité noyée ou une paroi lisse ne livrent pas immédiatement leur ancienne fonction.",
+          "prompt": "Préparer un bref document de connaissances initiales adapté aux origines choisies par le groupe."
+        },
+        {
+          "id": "mener-mysteres",
+          "title": "Conserver les mystères",
+          "text": "L’origine de Nyranthia, les raisons de sa présence en stase et la conscience des Entrelacs restent sans réponse définitive, même pour le maître de jeu. Les échos de Résonance n’offrent pas des archives parfaites. Les réactions coordonnées du vivant peuvent susciter des interprétations concurrentes sans qu’une explication tranche toutes les questions.",
+          "prompt": ""
+        },
+        {
+          "id": "mener-rarete",
+          "title": "Respecter l’échelle du monde",
+          "text": "Les longues liaisons entre communautés et les grands rassemblements humains restent exceptionnels. De très rares sociétés possèdent de l’électricité, des radios ou des armes à feu. La découverte d’un objet ne suffit pas à le rendre utilisable : énergie, pièces, consommables et savoir-faire peuvent manquer. La rareté de ces techniques doit rester cohérente d’un territoire à l’autre.",
+          "prompt": ""
+        },
+        {
+          "id": "mener-preparer",
+          "title": "Préparer une situation ouverte",
+          "text": "",
+          "prompt": "Décrire une préparation centrée sur des lieux, des acteurs, des besoins et des menaces, avec plusieurs issues possibles et sans itinéraire imposé."
+        },
+        {
+          "id": "mener-dangers",
+          "title": "Rendre le danger lisible",
+          "text": "",
+          "prompt": "Définir comment annoncer les risques, laisser agir les choix et produire des conséquences dures sans recourir à des morts arbitraires."
+        },
+        {
+          "id": "mener-aides",
+          "title": "Aides et références de table",
+          "text": "",
+          "prompt": "Rassembler un glossaire, les procédures essentielles et quelques tables de signes, de découvertes et de complications après validation des règles."
+        }
+      ]
+    }
+  ]
+}

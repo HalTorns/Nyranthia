@@ -1,0 +1,36 @@
+services:
+  jdr:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    init: true
+    stop_grace_period: 30s
+    environment:
+      NODE_ENV: production
+      NYRANTHIA_HOST: 0.0.0.0
+      NYRANTHIA_PORT: '4317'
+      NYRANTHIA_DATA_DIR: /app/data
+      NYRANTHIA_PUBLIC_URL: ${NYRANTHIA_PUBLIC_URL:?}
+      NYRANTHIA_AUTH_USER: ${NYRANTHIA_AUTH_USER:-auteur}
+      NYRANTHIA_AUTH_PASSWORD: ${NYRANTHIA_AUTH_PASSWORD:?}
+    expose:
+      - '4317'
+    volumes:
+      - livre:/app/data
+    healthcheck:
+      test: ['CMD', 'node', '-e', "fetch('http://127.0.0.1:4317/api/health').then(r=>process.exit(r.ok?0:1)).catch(()=>process.exit(1))"]
+      interval: 30s
+      timeout: 5s
+      start_period: 10s
+      retries: 3
+    security_opt:
+      - no-new-privileges:true
+    cap_drop:
+      - ALL
+    read_only: true
+    tmpfs:
+      - /tmp:size=16m,mode=1777
+
+volumes:
+  livre:

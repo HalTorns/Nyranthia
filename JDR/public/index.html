@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#122e2c">
+  <title>Nyranthia · Atelier du livre</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/styles.css">
+  <script type="module" src="/editor.bundle.js"></script>
+</head>
+<body>
+  <a class="skip" href="#manuscript">Aller au chapitre</a>
+  <aside class="sidebar" id="sidebar" aria-label="Sommaire du livre">
+    <div class="brand"><span class="brand-mark" aria-hidden="true">N</span><span>ATELIER DU LIVRE<small>Univers & règles</small></span></div>
+    <div class="book-identity">
+      <label class="sr-only" for="book-title">Titre du livre</label>
+      <textarea id="book-title" class="book-title" rows="1" maxlength="500" spellcheck="true">Nyranthia</textarea>
+      <label class="sr-only" for="book-subtitle">Sous-titre du livre</label>
+      <input id="book-subtitle" class="book-subtitle" type="text" maxlength="1000" placeholder="Sous-titre du livre">
+    </div>
+    <div class="contents-label"><span>SOMMAIRE</span><span id="chapter-count"></span></div>
+    <nav id="contents" aria-label="Chapitres"></nav>
+    <div class="sidebar-bottom">
+      <button id="add-chapter" class="add-chapter"><span aria-hidden="true">＋</span> Ajouter un chapitre</button>
+      <div class="book-progress"><span id="book-progress-label">Préparation du livre…</span><div class="progress-track"><div id="book-progress-bar"></div></div></div>
+    </div>
+  </aside>
+  <button id="shade" class="shade" aria-label="Fermer le sommaire" tabindex="-1"></button>
+  <main class="workspace">
+    <header class="toolbar">
+      <button id="toggle-sidebar" class="icon-button menu-toggle" aria-label="Ouvrir le sommaire" aria-controls="sidebar" aria-expanded="false">☰</button>
+      <div class="breadcrumb">Votre livre <span aria-hidden="true">/</span> <span id="breadcrumb-chapter">Chargement…</span></div>
+      <div class="save-indicator" role="status" aria-live="polite"><span id="save-icon" aria-hidden="true">○</span><span id="save-status">Ouverture du livre…</span></div>
+    </header>
+    <div class="editor-toolbar" role="toolbar" aria-label="Mise en forme du texte">
+      <label class="sr-only" for="text-style">Style du texte</label>
+      <select id="text-style"><option value="paragraph">Texte courant</option><option value="heading">Intertitre</option><option value="quote">Citation</option></select>
+      <span class="tool-divider" aria-hidden="true"></span>
+      <button data-edit-command="bold" class="format-letter" aria-label="Gras" title="Gras (Ctrl+B)"><b>G</b></button>
+      <button data-edit-command="italic" class="format-letter" aria-label="Italique" title="Italique (Ctrl+I)"><i>I</i></button>
+      <button data-edit-command="underline" class="format-letter" aria-label="Souligné" title="Souligné (Ctrl+U)"><u>S</u></button>
+      <button data-edit-command="strike" class="format-letter" aria-label="Barré" title="Barré"><s>B</s></button>
+      <button data-edit-command="highlight" aria-label="Surligner" title="Surligner"><span class="highlight-icon">ab</span></button>
+      <span class="tool-divider" aria-hidden="true"></span>
+      <button data-edit-command="bulletList" aria-label="Liste à puces" title="Liste à puces">• ≡</button>
+      <button data-edit-command="orderedList" aria-label="Liste numérotée" title="Liste numérotée">1. ≡</button>
+      <button data-edit-command="undo" aria-label="Annuler" title="Annuler (Ctrl+Z)">↶</button>
+      <button data-edit-command="redo" aria-label="Rétablir" title="Rétablir (Ctrl+Maj+Z)">↷</button>
+      <span class="tool-divider" aria-hidden="true"></span>
+      <button data-edit-command="annotation" class="text-tool" title="Sélectionnez un passage pour l’annoter"><span aria-hidden="true">✎</span> Annoter</button>
+      <button data-edit-command="image" class="text-tool" title="Insérer une image ou modifier l’image sélectionnée"><span aria-hidden="true">▧</span> Image</button>
+      <label id="image-size-label" hidden>Largeur <select id="image-size"><option value="50">50 %</option><option value="75">75 %</option><option value="100">100 %</option></select></label>
+      <button id="notes-toggle" class="text-tool notes-toggle" aria-expanded="false" aria-controls="annotations">Notes <span id="note-count"></span></button>
+    </div>
+    <div id="notice" class="notice" role="alert" hidden></div>
+    <div id="recovery" class="notice recovery" hidden>
+      <p>Un brouillon de cet onglet n’a pas été enregistré sur le serveur. Vous pouvez le reprendre ou conserver la version du livre.</p>
+      <button id="restore-draft">Reprendre mon brouillon</button><button id="keep-disk" class="subtle">Garder la version enregistrée</button>
+    </div>
+    <div class="book-desk"><div class="writing-area">
+      <article id="manuscript" class="paper" aria-label="Édition du chapitre" tabindex="-1">
+        <div class="loading">Ouverture du manuscrit…</div>
+      </article>
+      <div class="page-navigation"><button id="previous-chapter" class="subtle">← Chapitre précédent</button><span id="page-position"></span><button id="next-chapter" class="subtle">Chapitre suivant →</button></div>
+      <p class="storage-note">Votre livre est enregistré automatiquement sur le serveur.</p>
+    </div>
+    <aside id="annotations" class="annotations" aria-label="Notes du chapitre" inert>
+      <div class="notes-heading"><div><span class="eyebrow">DANS LA MARGE</span><h2>Vos annotations</h2><p id="notes-summary">0 note à reprendre</p></div><button id="close-notes" aria-label="Fermer les annotations">×</button></div>
+      <div id="notes-list"></div>
+    </aside></div>
+  </main>
+  <dialog id="note-dialog" aria-labelledby="note-dialog-title">
+    <form id="note-form">
+      <span class="eyebrow">NOTE DE L’AUTEUR</span><h2 id="note-dialog-title">Une idée à retrouver</h2>
+      <blockquote id="note-quote"></blockquote>
+      <label for="note-body">Votre annotation</label><textarea id="note-body" rows="5" maxlength="50000" required placeholder="À approfondir, à vérifier, une idée pour plus tard…"></textarea>
+      <p class="dialog-hint">Le passage sera surligné et la note restera dans la marge de ce chapitre.</p>
+      <div class="dialog-actions"><button type="button" id="cancel-note" class="secondary">Annuler</button><button type="submit" class="primary">Ajouter la note</button></div>
+    </form>
+  </dialog>
+  <dialog id="image-dialog" aria-labelledby="image-dialog-title">
+    <form id="image-form">
+      <span class="eyebrow">ILLUSTRER LE LIVRE</span><h2 id="image-dialog-title">Une image sur la page</h2>
+      <label for="image-file" class="file-label">Choisir une image sur cet appareil</label><input id="image-file" type="file" accept="image/png,image/jpeg,image/webp">
+      <p id="image-file-name" class="dialog-hint">PNG, JPEG ou WebP · 10 Mo maximum</p><img id="image-preview" alt="Aperçu de l’image à insérer" hidden>
+      <label for="image-caption">Légende <span>(facultatif)</span></label><input id="image-caption" type="text" maxlength="2000" placeholder="Un lieu, une créature, un détail du monde…">
+      <label for="image-alt">Description de l’image <span>(accessibilité)</span></label><input id="image-alt" type="text" maxlength="2000" placeholder="Décrivez brièvement ce que montre l’image">
+      <label for="image-display-size">Largeur dans la page</label><select id="image-display-size"><option value="100">Toute la largeur</option><option value="75">Trois quarts</option><option value="50">Demi-page</option></select>
+      <p id="image-error" role="alert"></p><p class="dialog-hint">L’image sera conservée avec votre livre sur le serveur.</p>
+      <div class="dialog-actions"><button id="cancel-image" type="button" class="secondary">Annuler</button><button id="image-submit" type="submit" class="primary">Insérer dans le livre</button></div>
+    </form>
+  </dialog>
+</body>
+</html>
